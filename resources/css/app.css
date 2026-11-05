@@ -1,0 +1,125 @@
+
+:root {
+    --theme-primary: #800776;
+    --theme-secondary: #5E3023;
+    --theme-accent: #C08552;
+    --theme-background: #DAB49D;
+    --theme-light-accent: #F3E3D7;
+    --theme-text: #5E3023;
+}
+
+body {
+    background: var(--theme-background);
+    color: var(--theme-text);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+    background: #fff;
+    border-right: 1px solid rgba(94, 48, 35, .15);
+    min-height: calc(100vh - 56px);
+}
+
+.sidebar .nav-link {
+    color: var(--theme-text);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+    background: var(--theme-light-accent);
+    color: var(--theme-primary);
+}
+
+.sidebar .nav-link.active {
+    background: var(--theme-primary);
+    color: #fff;
+}
+
+.sidebar button.nav-link {
+    border: 0;
+    background: transparent;
+}
+
+.sidebar button.nav-link:hover {
+    background: var(--theme-light-accent);
+}
+
+.dashboard-main {
+    min-width: 0;
+}
+
+.card {
+    background: #fff;
+    color: var(--theme-text);
+    border: 1px solid rgba(94, 48, 35, .18);
+}
+
+.stat-card,
+.chart-card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(94, 48, 35, .10);
+}
+
+.stat-card .card-body {
+    padding: 1.25rem;
+}
+
+.stat-card .card-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--theme-primary);
+    margin: 0;
+}
+
+.chart-container {
+    position: relative;
+    height: 280px;
+}
+
+.chart-wide {
+    position: relative;
+    height: 300px;
+}
+
+.btn-primary-custom {
+    background: var(--theme-accent);
+    border-color: var(--theme-accent);
+    color: #fff;
+}
+
+.btn-primary-custom:hover {
+    background: var(--theme-primary);
+    border-color: var(--theme-primary);
+    color: #fff;
+}
+
+.table thead th {
+    background: var(--theme-light-accent);
+    color: var(--theme-primary);
+}
+
+.low-performance-row td {
+    background: #fff3cd !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--theme-primary);
+    box-shadow: 0 0 0 .2rem rgba(128, 7, 118, .15);
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid rgba(94, 48, 35, .15);
+    }
+
+    .chart-container,
+    .chart-wide {
+        height: 250px;
+    }
+}

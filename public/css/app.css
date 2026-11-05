@@ -1,0 +1,145 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #212529;
+}
+
+
+
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+}
+
+
+.card {
+    border: 1px solid #e3e6f0;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Shadow utilities for clean depth */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Dashboard Metric Cards */
+.card .fs-2 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Card Headers */
+.card-header {
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.card-header.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+
+.table {
+    vertical-align: middle;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Low performance row highlight */
+.low-performance-row {
+    background-color: #fff3cd !important;
+}
+
+.low-performance-row:hover {
+    background-color: #ffe8a1 !important;
+}
+
+/* Custom Status Badges */
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.75em;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+.badge.bg-success {
+    background-color: #198754 !important;
+}
+
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+
+.btn-sm {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.825rem;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Action buttons gap spacing */
+.btn-outline-primary,
+.btn-outline-danger {
+    font-weight: 500;
+}
+
+/*Alert Banners & Form Controls*/
+.alert {
+    border-radius: 6px;
+    border: none;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+    border-left: 4px solid #ffc107;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-left: 4px solid #198754;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.form-control,
+.form-select {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
